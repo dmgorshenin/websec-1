@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset="UTF-8">
+
+<head>
+    <script src="./calculcator.js"></script>
+    <title>Калькулятор</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="number" id="number1" placeholder="Число 1" />
+
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="+">-</option>
+            <option value="+">*</option>
+            <option value="+">/</option>
+        </select>
+
+        <input type="number" id="number2" placeholder="Число 2" />
+
+        <button id="button" onclick="onClickButton()">подсчитать</button>
+
+        <div id="result">
+            <p id="oldResult"></p>
+            <p id="newResult"></p>
+        </div>
+    </div>
+</body>
+
+</html>
