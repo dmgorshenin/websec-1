@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <meta charset="UTF-8">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <script src="./calculcator.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Калькулятор</title>
 </head>
 
 <body>
     <div class="container">
-        <input type="number" id="number1" placeholder="Число 1" />
-
-        <select id="operation">
-            <option value="+">+</option>
-            <option value="+">-</option>
-            <option value="+">*</option>
-            <option value="+">/</option>
-        </select>
-
-        <input type="number" id="number2" placeholder="Число 2" />
-
-        <button id="button" onclick="onClickButton()">подсчитать</button>
-
-        <div id="result">
+        <div class="input-group">
+            <input type="number" id="number1" placeholder="Число 1" />
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" id="number2" placeholder="Число 2" />
+        </div>
+        <br>
+        <button id="button" onclick="onClickCalculate()">подсчитать</button>
+        <div class="result-container" id="result">
             <p id="oldResult"></p>
             <p id="newResult"></p>
         </div>

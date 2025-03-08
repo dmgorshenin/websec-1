@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px dashed brown;
+    background-color: lightgreen;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+}
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+.input-group input, .input-group select {
+    flex: 1;
+}
+input, select, button {
+    font-size: 20px;
+    padding: 5px;
+    border: 2px dashed brown;
+    box-sizing: border-box;
+    background-color: lightgreen;
+    border-radius: 15px;
+    text-align: center;
+    color: red;
+}
+::placeholder {
+    color: lightcoral;
+}
+button {
+    width: 120px;
+    margin-top: 10px;
+}
+.result-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px dashed brown;
+    text-align: left;
+    min-height: 50px;
+    background-color: lightgreen;
+    border-radius: 15px;
+    width: 100%;
+    color: red;
+}
+#oldResult {
+    color: lightcoral;
+}
+.input-error {
+    border-color: red;
+    background-color: #ffcccc;
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+        align-items: center;
+    }  
+    .container {
+        max-width: 100%;
+    }
+    body {
+        align-items: flex-start;
+    }
+}
